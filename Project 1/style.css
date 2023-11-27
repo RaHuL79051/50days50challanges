@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.panels{
+    height: 600px;
+    width: 100px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+}
+
+.active{
+    width: 900px;
+}
+
+#one{
+    background: url(images/One.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#two{
+    background:url(images/Two.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#three{
+    background: url(images/Three.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#four{
+    background: url(images/Four.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#five{
+    background: url(images/Five.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.panels.active h1{
+    flex: 5;
+    opacity: 1;
+}
+
+.panels:hover{
+    cursor: pointer;
+}
